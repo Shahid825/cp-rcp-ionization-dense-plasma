@@ -1,0 +1,52 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the article and this software."
+title: "Code and data for: Ionization-Driven Instabilities of Circularly Polarized Electromagnetic Modes in Dense Plasmas"
+type: software
+version: 1.0.0
+license: MIT
+authors:
+  - family-names: Rafiq
+    given-names: M. Bilal
+    affiliation: "COMSATS University Islamabad, Lahore Campus"
+  - family-names: Idrees
+    given-names: Shahid
+    affiliation: "National Astronomical Observatories, Chinese Academy of Sciences"
+    email: shahid@bao.ac.cn
+  - family-names: Khan
+    given-names: Arroj A.
+    affiliation: "Superior University Lahore"
+  - family-names: Rasheed
+    given-names: A.
+    affiliation: "G. C. University Faisalabad"
+  - family-names: Ramzan
+    given-names: B.
+    affiliation: "University of Agriculture, Faisalabad"
+  - family-names: Jamil
+    given-names: M.
+    affiliation: "COMSATS University Islamabad, Lahore Campus"
+keywords:
+  - quantum plasma
+  - circularly polarized waves
+  - ionization
+  - growth rate
+  - dense plasmas
+  - white dwarfs
+  - neutron stars
+preferred-citation:
+  type: article
+  title: "Ionization-Driven Instabilities of Circularly Polarized Electromagnetic Modes in Dense Plasmas"
+  journal: "Research in Astronomy and Astrophysics"
+  year: 2026
+  authors:
+    - family-names: Rafiq
+      given-names: M. Bilal
+    - family-names: Idrees
+      given-names: Shahid
+    - family-names: Khan
+      given-names: Arroj A.
+    - family-names: Rasheed
+      given-names: A.
+    - family-names: Ramzan
+      given-names: B.
+    - family-names: Jamil
+      given-names: M.

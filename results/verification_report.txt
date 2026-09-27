@@ -1,0 +1,47 @@
+========================================================================
+Verification report: Rafiq et al. (2026), RAA
+========================================================================
+
+[1] Eq. (16) vs Eq. (15), 20000 random points:
+    max |gamma2(16) - gamma2(15)| / gamma2(15) = 8.16e-14
+
+[2] Plateaus of (gamma_2 - alpha/2)/Delta_0 (alpha = 3e10, n = 1e25):
+    theta=20 deg: k=1: -1.0000 (expect -1)   k=1e3: -1.0622 (expect -1.0621)   k=1e9: -2.0000 (expect -2)
+    theta=15 deg: k=1: -1.0000 (expect -1)   k=1e3: -1.0347 (expect -1.0347)   k=1e9: -2.0000 (expect -2)
+    theta=10 deg: k=1: -1.0000 (expect -1)   k=1e3: -1.0153 (expect -1.0153)   k=1e9: -2.0000 (expect -2)
+
+[3] Singular points: Eq. (19) vs numerical zeros of the denominator of Eq. (16)
+    210 parameter sets (alpha 1e10-3e12, n 1e24-1e26, theta 5-30 deg)
+    exactly two singular points found in every case; max relative difference = 1.48e-07
+
+[4] CP large-k limit, Eq. (20) vs Eq. (14) at k = 3e8 cm^-1 (alpha = 3e10):
+    n_e0      theta   gamma1/(alpha/2)-1: Eq.(14)   Eq.(20)    k*lambda_TF
+    1e+24   20      1.5150e-03          1.5135e-03   1.10
+    1e+24   15      1.7131e-03          1.7111e-03   1.10
+    1e+24   10      1.8591e-03          1.8566e-03   1.10
+    1e+25   20      7.0263e-04          7.0252e-04   0.75
+    1e+25   15      7.9441e-04          7.9421e-04   0.75
+    1e+25   10      8.6204e-04          8.6177e-04   0.75
+    1e+26   20      3.2601e-04          3.2608e-04   0.51
+    1e+26   15      3.6858e-04          3.6864e-04   0.51
+    1e+26   10      3.9994e-04          4.0000e-04   0.51
+
+[5] Numbers quoted in the text
+    Fig. 1, gamma_1(k=3e8) for theta = 20, 15, 10 deg: 1.50105e+10, 1.50119e+10, 1.50129e+10
+    Fig. 3, gamma_1(3e8)/gamma_1(0) - 1 for n = 1e24, 1e25, 1e26: 1.52e-03, 7.03e-04, 3.26e-04
+    CP singular points (alpha=3e10, n=1e25, theta=20):
+        k = 1.134e+02, 2.086e+05  (alpha/(v_Fe sin th) = 1.137e+02, alpha/(v_Fi sin th) = 2.087e+05)
+
+    Table 1:
+      n=1e+24  w_pe=5.641e+16  v_Fe=3.582e+08  v_Fi=1.951e+05  T_Fe=4.23e+05 K  pF/mec=0.012  e2/(aEF)=0.64  a=6.20e-09  lam_F=2.03e-08  lam_TF=3.67e-09  d_e=5.31e-07
+      n=1e+25  w_pe=1.784e+17  v_Fe=7.717e+08  v_Fi=4.202e+05  T_Fe=1.96e+06 K  pF/mec=0.026  e2/(aEF)=0.30  a=2.88e-09  lam_F=9.43e-09  lam_TF=2.50e-09  d_e=1.68e-07
+      n=1e+26  w_pe=5.641e+17  v_Fe=1.662e+09  v_Fi=9.054e+05  T_Fe=9.12e+06 K  pF/mec=0.055  e2/(aEF)=0.14  a=1.34e-09  lam_F=4.38e-09  lam_TF=1.70e-09  d_e=5.31e-08
+
+    Table 3 (k_e, k_i numerical | Eq. 19):
+      alpha=3e+10 n=1e+25 theta=20  Delta0=4.240e-04  k_e=40.07 k_i=2.155e+05 | 40.07 2.155e+05
+      alpha=3e+10 n=1e+25 theta=15  Delta0=4.240e-04  k_e=39.55 k_i=2.807e+05 | 39.55 2.807e+05
+      alpha=3e+10 n=1e+25 theta=10  Delta0=4.240e-04  k_e=39.17 k_i=4.143e+05 | 39.17 4.143e+05
+      alpha=3e+11 n=1e+25 theta=20  Delta0=4.240e-01  k_e=400.7 k_i=2.155e+06 | 400.7 2.155e+06
+      alpha=3e+12 n=1e+25 theta=20  Delta0=4.240e+02  k_e=4007 k_i=2.155e+07 | 4007 2.155e+07
+      alpha=3e+10 n=1e+24 theta=20  Delta0=4.240e-03  k_e=86.32 k_i=4.643e+05 | 86.32 4.643e+05
+      alpha=3e+10 n=1e+26 theta=20  Delta0=4.240e-05  k_e=18.6 k_i=1e+05 | 18.6 1e+05
